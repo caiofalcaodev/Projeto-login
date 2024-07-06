@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* #023441 
+   #06A0C6
+   #4DD7F9       
+*/
+
+@font-face {
+    font-family: 'americancap';
+    src: url(../font/americancap.ttf) format('TrueType');
+    font-weight: bolder;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient(to right, #0A0A0A, #111111, #222222 );
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to right, #0A0A0A, #111111, #222222 );
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+    border-radius: 20px; 
+    width: 300px;
+    height: 600px;
+}
+
+section#login > div#img {
+    display: block;
+    background: #111111 url(../imagens/câmera.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+h1#logue {
+    padding-bottom: 5px;
+    font-family: 'americancap';
+    text-align: center;
+    font-size: 2.7em;
+}
+
+div#d-email {
+    padding-top: 20px;
+    text-align: center;
+}
